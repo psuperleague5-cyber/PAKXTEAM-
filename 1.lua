@@ -2166,7 +2166,7 @@ local GameplayData = require("GameLua.GameCore.Data.GameplayData")
 -- ==========================================
 _G.PAKxTEAMConfig = _G.PAKxTEAMConfig or {
     AutoHead = false,
-    EspVip = false,
+    EspVip = true,
     EspDistance = true,
     EspVipPro = false,
     EspRadar = false,
@@ -2179,7 +2179,7 @@ _G.PAKxTEAMConfig = _G.PAKxTEAMConfig or {
     EspOutline = false,
     OutlineThickness = 10,
     UnlockFPS = false,
-    IpadView = false,
+    IpadView = true,
     CustomHRecoil = false,
     CustomVRecoil = false,
     LessShake = false,
@@ -2191,10 +2191,10 @@ _G.PAKxTEAMConfig = _G.PAKxTEAMConfig or {
 
     AimTouchEnable = false,
 
-    AimTouchHipfire = false,
-    AimTouchHipIgKnock = false,
+    AimTouchHipfire = true,
+    AimTouchHipIgKnock = true,
     AimTouchHipIgBot = false,
-    AimTouchHipVisCheck = false,
+    AimTouchHipVisCheck = true,
 
     AimTouchSG = false,
     AimTouchSGAutoFire = false,
@@ -2202,15 +2202,15 @@ _G.PAKxTEAMConfig = _G.PAKxTEAMConfig or {
     AimTouchSGIgBot = false,
     AimTouchSGVisCheck = false,
 
-    AimTouchScopeAll = false,
-    AimTouchScopeIgKnock = false,
+    AimTouchScopeAll = true,
+    AimTouchScopeIgKnock = true,
     AimTouchScopeIgBot = false,
-    AimTouchScopeVisCheck = false,
+    AimTouchScopeVisCheck = true,
 
-    AimTouchScopeSniper = false,
-    AimTouchSniperIgKnock = false,
+    AimTouchScopeSniper = true,
+    AimTouchSniperIgKnock = true,
     AimTouchSniperIgBot = false,
-    AimTouchSniperVisCheck = false,
+    AimTouchSniperVisCheck = true,
 }
 
 _G.PAKxTEAMState = _G.PAKxTEAMState or {
@@ -2486,8 +2486,8 @@ function _G.InitModMenuTab()
         OuterSpeed = 10, InnerSpeed = 10, OuterRecoil = 0, HRecoil = 0.3, VRecoil = 0.3, IpadViewFOV = 120,
         AimTouchHipPrio = 1, AimTouchHipBone = 1, AimTouchHipCond = 1, AimTouchHipSpeed = 50, AimTouchHipFOV = 30, AimTouchHipDist = 250,
         AimTouchSGPrio = 1, AimTouchSGBone = 2, AimTouchSGCond = 1, AimTouchSGSpeed = 80, AimTouchSGFOV = 40, AimTouchSGDist = 30,
-        AimTouchScopePrio = 1, AimTouchScopeBone = 2, AimTouchScopeCond = 1, AimTouchScopeSpeed = 40, AimTouchScopeFOV = 20, AimTouchScopeDist = 300, AimTouchScopePred = 4, AimTouchScopeRecoil = 3,
-        AimTouchSniperPrio = 1, AimTouchSniperBone = 1, AimTouchSniperCond = 2, AimTouchSniperSpeed = 30, AimTouchSniperFOV = 20, AimTouchSniperDist = 400, AimTouchSniperPred = 0,
+        AimTouchScopePrio = 1, AimTouchScopeBone = 1, AimTouchScopeCond = 1, AimTouchScopeSpeed = 60, AimTouchScopeFOV = 20, AimTouchScopeDist = 300, AimTouchScopePred = 4, AimTouchScopeRecoil = 3,
+        AimTouchSniperPrio = 1, AimTouchSniperBone = 1, AimTouchSniperCond = 2, AimTouchSniperSpeed = 40, AimTouchSniperFOV = 20, AimTouchSniperDist = 400, AimTouchSniperPred = 0,
     }
 
     local LocUtil = _G.LocUtil
